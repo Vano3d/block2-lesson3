@@ -9,12 +9,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userNameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var forgotUserNameButton: UIButton!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("Hello, world!")
+        
+        //meybe something 
     }
 
-
+    @IBAction func tappedLoginButton(_ sender: Any) {
+    
+    }
+    
+    @IBAction func tappedForgotUserNameButton(_ sender: Any) {
+        print("Forgot User")
+    }
+    
+    @IBAction func tappedForgotPasswordButton(_ sender: Any) {
+        print("Forgot Pass")
+    }
+    
 }
 
