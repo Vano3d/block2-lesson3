@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="ViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
         <!--Logout View Controller-->
         <scene sceneID="deI-XY-tar">
             <objects>
-                <viewController storyboardIdentifier="logoutStoryboard" id="QJt-Sx-wqb" customClass="LogoutViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogoutVC" id="QJt-Sx-wqb" customClass="LogoutViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJs-cK-1UJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,7 +104,6 @@
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="tappedLogoutButton" destination="QJt-Sx-wqb" eventType="touchUpInside" id="ogz-4c-X1l"/>
-                                    <segue destination="wMN-Mi-GnB" kind="unwind" unwindAction="unwindFor:" id="XIA-pn-86O"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -120,7 +119,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1i-by-5Yu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="wMN-Mi-GnB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1749" y="78"/>
         </scene>

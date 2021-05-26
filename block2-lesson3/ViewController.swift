@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    var userText = "aaa"
-    var passText = "bbb"
+    var userText = "uuusserrr"
+    var passText = "paroll"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +27,20 @@ class ViewController: UIViewController {
         
     }
 
+    func loginChecked() -> Bool {
+        userNameField.text == "User" && passwordField.text == "Password"
+    }
+    
+    func logoutAppear() {
+        let logoutVC = self.storyboard?.instantiateViewController(withIdentifier: "LogoutVC") as! LogoutViewController
+                let navigationController = UINavigationController(rootViewController: logoutVC)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
     @IBAction func tappedLoginButton(_ sender: Any) {
         
-        if userNameField.text == "User" && passwordField.text == "Password" {
-            let logoutVC = self.storyboard?.instantiateViewController(withIdentifier: "logoutStoryboard") as! LogoutViewController
-                    let navigationController = UINavigationController(rootViewController: logoutVC)
-            self.present(navigationController, animated: true, completion: nil)
+        if loginChecked() {
+            logoutAppear()
         } else {
             print("wrong!")
         }
