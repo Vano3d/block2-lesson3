@@ -16,40 +16,43 @@ class ViewController: UIViewController {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    var userText = "Userr"
-    var passText = "Passwordd"
+    var userText = "User"
+    var passText = "Pass"
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         userNameField.text = userText
         passwordField.text = passText
     }
 
     func loginChecked() -> Bool {
-        userNameField.text == "User" && passwordField.text == "Password"
+        userNameField.text == "Ivan" && passwordField.text == "Password"
     }
     
-    func logoutAppear() {
-        let logoutVC = storyboard?.instantiateViewController(withIdentifier: "LogoutVC")
-                self.present(logoutVC!, animated: true, completion: nil)
+    func showSecondScreen() {
+        performSegue(withIdentifier: "LogoutVC", sender: nil)
     }
     
     @IBAction func tappedLoginButton(_ sender: Any) {
         
         if loginChecked() {
-            logoutAppear()
+            showSecondScreen()
         } else {
             print("wrong!")
         }
-        
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let settingsVC = segue.destination as? LogoutViewController else { return }
-        settingsVC.helloText = userText
-    }
+
+            guard let secondVC = segue.destination as? LogoutViewController else { return }
+        secondVC.helloText = userNameField.text
+        }
+        
+    
+    
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         guard segue.source is LogoutViewController else { return }
