@@ -20,11 +20,11 @@ class ViewController: UIViewController {
     var passText = "Passwordd"
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         userNameField.text = userText
         passwordField.text = passText
-        
     }
 
     func loginChecked() -> Bool {
@@ -45,6 +45,18 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let settingsVC = segue.destination as? LogoutViewController else { return }
+        settingsVC.helloText = userText
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        guard segue.source is LogoutViewController else { return }
+        userNameField.text = ""
+        passwordField.text = ""
+    }
+    
     
     @IBAction func tappedForgotUserNameButton(_ sender: Any) {
         print("Your User name is User :-)")

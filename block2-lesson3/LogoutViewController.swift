@@ -10,11 +10,13 @@ import UIKit
 class LogoutViewController: UIViewController {
     
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var helloUserText: UILabel!
     
+    var helloText: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // print something?
+        helloUserText.text = helloText
     }
     
     override func viewWillAppear(_ animated: Bool) {
