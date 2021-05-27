@@ -34,7 +34,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         userNameField.text = userText
         passwordField.text = passText
         addTapGestureToHideKeyboard()
-        
+        userNameField.delegate = self
+        passwordField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.passwordField.becomeFirstResponder()
+        return true
     }
 
     func loginChecked() -> Bool {
