@@ -13,10 +13,7 @@ extension UIViewController {
     }
 }
 
-
 class ViewController: UIViewController, UITextFieldDelegate {
-    
-    
 
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
