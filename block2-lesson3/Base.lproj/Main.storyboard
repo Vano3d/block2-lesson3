@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="0Vp-CE-T83"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T5g-Gy-aMG">
                                 <rect key="frame" x="36.5" y="234" width="247" height="34"/>
@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="Jws-Br-rk1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTF-8P-ZqN">
                                 <rect key="frame" x="36.5" y="343" width="116" height="28"/>
