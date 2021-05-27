@@ -53,20 +53,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if loginChecked() {
             showSecondScreen()
         } else {
-            print("wrong!")
+            Alert.showBasicAlert(on: self, with: "Invalid login or password", message: "Please correct")
         }
     }
     
     @IBAction func tappedForgotUserNameButton(_ sender: Any) {
-        
-        let alert = UIAlertController(title: "Oops!", message: "Your User name is \(userConst)", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true)
+        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your User name is \(userConst)")
 
     }
     
     @IBAction func tappedForgotPasswordButton(_ sender: Any) {
-        print("Your Passwoer is Password :-)")
+        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your Password is.. \(passConst)")
     }
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
