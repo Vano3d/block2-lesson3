@@ -22,11 +22,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    var userText = "User"
-    var passText = "Pass"
+    let userText = "User"
+    let passText = "Pass"
     
-    let userConst = "Ivan"
-    let passConst = "Password"
+    private let userConst = "Ivan"
+    private let passConst = "Password"
     
     override func viewDidLoad() {
         
