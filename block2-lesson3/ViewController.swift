@@ -39,7 +39,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.passwordField.becomeFirstResponder()
+        if textField == userNameField {
+            passwordField.becomeFirstResponder()
+        } else {
+            if loginChecked() {
+                showSecondScreen()
+            } else {
+                Alert.showBasicAlert(on: self, with: "Invalid login or password", message: "Please correct")
+            }
+            
+        }
         return true
     }
 
