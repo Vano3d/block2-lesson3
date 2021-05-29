@@ -24,18 +24,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    let userText = "User"
-    let passText = "Pass"
     
-    private let userConst = "Ivan"
-    private let passConst = "Password"
+//    private let userConst = "Ivan"
+//    private let passConst = "Password"
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-        userNameField.text = userText
-        passwordField.text = passText
+        userNameField.text = ""
+        passwordField.text = ""
         addTapGestureToHideKeyboard()
         userNameField.delegate = self
         passwordField.delegate = self
