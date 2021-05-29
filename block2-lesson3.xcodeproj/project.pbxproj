@@ -44,6 +44,7 @@
 		E6036CC8265D6E7900B85492 = {
 			isa = PBXGroup;
 			children = (
+				E604BABF2662E8C500AED1C9 /* ViewControllers */,
 				E6036CD3265D6E7900B85492 /* block2-lesson3 */,
 				E6036CD2265D6E7900B85492 /* Products */,
 			);
@@ -62,15 +63,22 @@
 			children = (
 				E6036CD4265D6E7900B85492 /* AppDelegate.swift */,
 				E6036CD6265D6E7900B85492 /* SceneDelegate.swift */,
-				E6036CD8265D6E7900B85492 /* ViewController.swift */,
 				E6036CDA265D6E7900B85492 /* Main.storyboard */,
 				E6036CDD265D6E7B00B85492 /* Assets.xcassets */,
 				E6036CDF265D6E7B00B85492 /* LaunchScreen.storyboard */,
 				E6036CE2265D6E7B00B85492 /* Info.plist */,
-				E6036CE8265D881F00B85492 /* LogoutViewController.swift */,
 				E6B79E5F265F1AB3003AF507 /* Alert.swift */,
 			);
 			path = "block2-lesson3";
+			sourceTree = "<group>";
+		};
+		E604BABF2662E8C500AED1C9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6036CE8265D881F00B85492 /* LogoutViewController.swift */,
+				E6036CD8265D6E7900B85492 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
