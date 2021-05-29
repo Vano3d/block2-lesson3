@@ -6,6 +6,8 @@
 //
 
 import UIKit
+
+
 extension UIViewController {
     func addTapGestureToHideKeyboard() {
         let tapGesture = UITapGestureRecognizer(target: view, action: #selector(view.endEditing))
@@ -31,6 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         userNameField.text = userText
         passwordField.text = passText
         addTapGestureToHideKeyboard()
