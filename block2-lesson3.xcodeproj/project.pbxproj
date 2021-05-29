@@ -44,7 +44,6 @@
 		E6036CC8265D6E7900B85492 = {
 			isa = PBXGroup;
 			children = (
-				E604BABF2662E8C500AED1C9 /* ViewControllers */,
 				E6036CD3265D6E7900B85492 /* block2-lesson3 */,
 				E6036CD2265D6E7900B85492 /* Products */,
 			);
@@ -61,13 +60,13 @@
 		E6036CD3265D6E7900B85492 /* block2-lesson3 */ = {
 			isa = PBXGroup;
 			children = (
+				E604BAC22662F34700AED1C9 /* Resources */,
+				E604BAC12662F34000AED1C9 /* Models */,
+				E604BAC02662F31100AED1C9 /* Storyboards */,
+				E604BABF2662E8C500AED1C9 /* ViewControllers */,
 				E6036CD4265D6E7900B85492 /* AppDelegate.swift */,
 				E6036CD6265D6E7900B85492 /* SceneDelegate.swift */,
-				E6036CDA265D6E7900B85492 /* Main.storyboard */,
-				E6036CDD265D6E7B00B85492 /* Assets.xcassets */,
-				E6036CDF265D6E7B00B85492 /* LaunchScreen.storyboard */,
 				E6036CE2265D6E7B00B85492 /* Info.plist */,
-				E6B79E5F265F1AB3003AF507 /* Alert.swift */,
 			);
 			path = "block2-lesson3";
 			sourceTree = "<group>";
@@ -79,6 +78,31 @@
 				E6036CD8265D6E7900B85492 /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E604BAC02662F31100AED1C9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E6036CDA265D6E7900B85492 /* Main.storyboard */,
+				E6036CDF265D6E7B00B85492 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E604BAC12662F34000AED1C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6B79E5F265F1AB3003AF507 /* Alert.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E604BAC22662F34700AED1C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6036CDD265D6E7B00B85492 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
