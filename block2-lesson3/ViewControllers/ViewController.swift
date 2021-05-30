@@ -77,10 +77,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let tabBarController = segue.destination as! UITabBarController
         
-            guard let secondVC = segue.destination as? LogoutViewController else { return }
-        secondVC.helloText = userNameField.text
+        let tabBarController = segue.destination as! UITabBarController
+        
+        for viewController in tabBarController.viewControllers ?? [] {
+            if let logoutVC = viewController as? LogoutViewController {
+                logoutVC.helloText = userNameField.text
+            }
+        }
+        
+        
+//            guard let secondVC = segue.destination as? LogoutViewController else { return }
+//        secondVC.helloText = userNameField.text
         
         }
     

@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="801" y="-756"/>
         </scene>
-        <!--More-->
+        <!--About-->
         <scene sceneID="T17-dj-KTY">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2N-Qn-XeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -110,9 +110,7 @@
                             <constraint firstItem="cwp-aD-Hec" firstAttribute="centerX" secondItem="7n4-7b-o57" secondAttribute="centerX" id="mdC-dA-SkX"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" id="PYG-OM-zOU">
-                        <imageReference key="image" image="globe" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="About" image="mustache.fill" catalog="system" id="PYG-OM-zOU"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2205" y="44"/>
@@ -135,7 +133,7 @@
             </objects>
             <point key="canvasLocation" x="1748" y="-756"/>
         </scene>
-        <!--About me-->
+        <!--Welcome-->
         <scene sceneID="deI-XY-tar">
             <objects>
                 <viewController storyboardIdentifier="aboutMeVC" id="QJt-Sx-wqb" customClass="LogoutViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
@@ -150,7 +148,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe0-Kb-lP8">
-                                <rect key="frame" x="136" y="285" width="48" height="30"/>
+                                <rect key="frame" x="136" y="439" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="tappedLogoutButton" destination="QJt-Sx-wqb" eventType="touchUpInside" id="ogz-4c-X1l"/>
@@ -161,15 +159,15 @@
                         <viewLayoutGuide key="safeArea" id="awZ-an-aDG"/>
                         <color key="backgroundColor" red="0.85072988839999997" green="0.97625964880000005" blue="0.91187893369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="awZ-an-aDG" firstAttribute="bottom" secondItem="xe0-Kb-lP8" secondAttribute="bottom" constant="50" id="RaZ-al-dft"/>
                             <constraint firstItem="b7l-Oe-7N5" firstAttribute="centerX" secondItem="tJs-cK-1UJ" secondAttribute="centerX" id="ZAD-ek-5px"/>
                             <constraint firstItem="xe0-Kb-lP8" firstAttribute="centerX" secondItem="tJs-cK-1UJ" secondAttribute="centerX" id="d2A-TJ-two"/>
-                            <constraint firstItem="xe0-Kb-lP8" firstAttribute="top" secondItem="b7l-Oe-7N5" secondAttribute="bottom" constant="161" id="fdF-1o-swm"/>
                             <constraint firstItem="xe0-Kb-lP8" firstAttribute="centerX" secondItem="tJs-cK-1UJ" secondAttribute="centerX" id="tTW-QV-FkK"/>
                             <constraint firstItem="b7l-Oe-7N5" firstAttribute="centerY" secondItem="tJs-cK-1UJ" secondAttribute="centerY" multiplier="0.4" id="zVi-WM-x3X"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About me" id="lNh-JS-IJ7">
-                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
+                    <tabBarItem key="tabBarItem" title="Welcome" id="lNh-JS-IJ7">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="helloUserText" destination="b7l-Oe-7N5" id="NEM-mY-ybd"/>
@@ -183,8 +181,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="globe" catalog="system" width="128" height="121"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="mustache.fill" catalog="system" width="128" height="49"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
