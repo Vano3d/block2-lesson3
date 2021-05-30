@@ -12,5 +12,8 @@ class UserData {
     let passConst = "Password"
 }
 
-
+class InfoDescription {
+    var title: String = ""
+    var description: String = ""
+}
 

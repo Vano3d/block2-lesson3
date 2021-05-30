@@ -16,6 +16,7 @@
 		E6036CE9265D881F00B85492 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6036CE8265D881F00B85492 /* LogoutViewController.swift */; };
 		E604BAC42662F4D600AED1C9 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604BAC32662F4D600AED1C9 /* UserData.swift */; };
 		E604BAC626630B9300AED1C9 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604BAC526630B9300AED1C9 /* MoreViewController.swift */; };
+		E604BAC82663D26600AED1C9 /* GradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604BAC72663D26600AED1C9 /* GradientColor.swift */; };
 		E6B79E60265F1AB3003AF507 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B79E5F265F1AB3003AF507 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		E6036CE8265D881F00B85492 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		E604BAC32662F4D600AED1C9 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		E604BAC526630B9300AED1C9 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		E604BAC72663D26600AED1C9 /* GradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColor.swift; sourceTree = "<group>"; };
 		E6B79E5F265F1AB3003AF507 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 			children = (
 				E6B79E5F265F1AB3003AF507 /* Alert.swift */,
 				E604BAC32662F4D600AED1C9 /* UserData.swift */,
+				E604BAC72663D26600AED1C9 /* GradientColor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				E604BAC626630B9300AED1C9 /* MoreViewController.swift in Sources */,
 				E604BAC42662F4D600AED1C9 /* UserData.swift in Sources */,
 				E6036CD9265D6E7900B85492 /* ViewController.swift in Sources */,
+				E604BAC82663D26600AED1C9 /* GradientColor.swift in Sources */,
 				E6036CD5265D6E7900B85492 /* AppDelegate.swift in Sources */,
 				E6036CE9265D881F00B85492 /* LogoutViewController.swift in Sources */,
 				E6B79E60265F1AB3003AF507 /* Alert.swift in Sources */,

@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
+    
 
     override func viewDidLoad() {
         
@@ -34,6 +35,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         addTapGestureToHideKeyboard()
         userNameField.delegate = self
         passwordField.delegate = self
+        
+        loginButton.layer.cornerRadius = 15
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
