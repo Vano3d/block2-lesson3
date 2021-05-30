@@ -26,7 +26,6 @@ struct InfoDescription {
         ]
     }
     
-    
 }
 var descriptionArray = InfoDescription.getDescription()
 
