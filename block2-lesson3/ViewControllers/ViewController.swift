@@ -55,7 +55,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func showSecondScreen() {
-        performSegue(withIdentifier: "LogoutVC", sender: nil)
+        performSegue(withIdentifier: "tabBarVC", sender: nil)
     }
     
     @IBAction func tappedLoginButton(_ sender: Any) {
@@ -86,11 +86,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
         }
         
-        
-//            guard let secondVC = segue.destination as? LogoutViewController else { return }
-//        secondVC.helloText = userNameField.text
-        
-        }
+    }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         guard segue.source is LogoutViewController else { return }
