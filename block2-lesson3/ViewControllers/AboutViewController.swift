@@ -15,7 +15,7 @@ class AboutViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        titleAbout.text = InfoDescription.getDescription()[0].title
-        textAbout.text = InfoDescription.getDescription()[0].description
+        titleAbout.text = descriptionArray[0].title
+        textAbout.text = descriptionArray[0].description
     }
 }

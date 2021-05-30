@@ -14,7 +14,7 @@ class MyJobViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        titleJob.text = InfoDescription.getDescription()[2].title
-        textJob.text = InfoDescription.getDescription()[2].description
+        titleJob.text = descriptionArray[2].title
+        textJob.text = descriptionArray[2].description
     }
 }
