@@ -24,21 +24,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    let userText = "User"
-    let passText = "Pass"
     
-    private let userConst = "Ivan"
-    private let passConst = "Password"
-    
+
     override func viewDidLoad() {
         
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
-        userNameField.text = userText
-        passwordField.text = passText
+        userNameField.text = ""
+        passwordField.text = ""
         addTapGestureToHideKeyboard()
         userNameField.delegate = self
         passwordField.delegate = self
+        
+        loginButton.layer.cornerRadius = 15
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -56,11 +55,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func loginChecked() -> Bool {
-        userNameField.text == userConst && passwordField.text == passConst
+        userNameField.text == UserData().userConst && passwordField.text == UserData().passConst
     }
     
     func showSecondScreen() {
-        performSegue(withIdentifier: "LogoutVC", sender: nil)
+        performSegue(withIdentifier: "tabBarVC", sender: nil)
     }
     
     @IBAction func tappedLoginButton(_ sender: Any) {
@@ -73,19 +72,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func tappedForgotUserNameButton(_ sender: Any) {
-        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your User name is \(userConst)")
+        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your User name is \(UserData().userConst)")
 
     }
     
     @IBAction func tappedForgotPasswordButton(_ sender: Any) {
-        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your Password is.. \(passConst)")
+        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your Password is.. \(UserData().passConst)")
     }
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-            guard let secondVC = segue.destination as? LogoutViewController else { return }
-        secondVC.helloText = userNameField.text
+        
+        let tabBarController = segue.destination as! UITabBarController
+        
+        for viewController in tabBarController.viewControllers ?? [] {
+            if let logoutVC = viewController as? LogoutViewController {
+                logoutVC.helloText = userNameField.text
+            }
         }
+        
+    }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         guard segue.source is LogoutViewController else { return }
