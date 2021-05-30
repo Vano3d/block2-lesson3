@@ -104,7 +104,6 @@
         <!--Information-->
         <scene sceneID="T17-dj-KTY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q2N-Qn-XeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="ghI-J2-H3u" customClass="MoreViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7n4-7b-o57">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -158,19 +157,20 @@
                     <tabBarItem key="tabBarItem" title="About" image="applelogo" catalog="system" id="PYG-OM-zOU"/>
                     <navigationItem key="navigationItem" title="Information" id="5Fu-yG-Cxq"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q2N-Qn-XeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3086" y="44"/>
         </scene>
-        <!--View Controller-->
+        <!--My Job View Controller-->
         <scene sceneID="P58-HV-DAK">
             <objects>
-                <viewController id="365-z3-ghy" sceneMemberID="viewController">
+                <viewController id="365-z3-ghy" customClass="MyJobViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bDe-FR-pli">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Моя работа" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMq-w6-Ph1">
-                                <rect key="frame" x="105.5" y="69" width="164" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMq-w6-Ph1">
+                                <rect key="frame" x="162.5" y="69" width="50.5" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -181,18 +181,34 @@
                                     <constraint firstAttribute="height" constant="190" id="23V-9B-4C9"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ye8-pX-PHr">
+                                <rect key="frame" x="25" y="346" width="325" height="247"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z0n-Yg-MM5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dMq-w6-Ph1" firstAttribute="centerX" secondItem="bDe-FR-pli" secondAttribute="centerX" id="FlI-KR-MO5"/>
                             <constraint firstItem="dMq-w6-Ph1" firstAttribute="top" secondItem="Z0n-Yg-MM5" secondAttribute="top" constant="25" id="HUO-aV-Ctg"/>
+                            <constraint firstItem="Z0n-Yg-MM5" firstAttribute="bottom" secondItem="Ye8-pX-PHr" secondAttribute="bottom" constant="25" id="Sds-uK-eEA"/>
                             <constraint firstItem="vB5-Y4-Rdl" firstAttribute="top" secondItem="dMq-w6-Ph1" secondAttribute="bottom" constant="25" id="VYA-n0-w4Q"/>
                             <constraint firstItem="vB5-Y4-Rdl" firstAttribute="leading" secondItem="Z0n-Yg-MM5" secondAttribute="leading" constant="25" id="XS8-A0-ZsT"/>
+                            <constraint firstItem="Z0n-Yg-MM5" firstAttribute="trailing" secondItem="Ye8-pX-PHr" secondAttribute="trailing" constant="25" id="d2E-g1-ZMr"/>
+                            <constraint firstItem="Ye8-pX-PHr" firstAttribute="top" secondItem="vB5-Y4-Rdl" secondAttribute="bottom" constant="25" id="dYk-9J-2Bv"/>
                             <constraint firstItem="Z0n-Yg-MM5" firstAttribute="trailing" secondItem="vB5-Y4-Rdl" secondAttribute="trailing" constant="25" id="t2Z-je-dnL"/>
+                            <constraint firstItem="Ye8-pX-PHr" firstAttribute="leading" secondItem="Z0n-Yg-MM5" secondAttribute="leading" constant="25" id="yA7-z3-rnF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="l0i-aM-h4E"/>
+                    <connections>
+                        <outlet property="textJob" destination="Ye8-pX-PHr" id="pHy-se-ZxE"/>
+                        <outlet property="titleJob" destination="dMq-w6-Ph1" id="6BS-Kq-inS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tQP-P8-7ih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,16 +252,16 @@
             </objects>
             <point key="canvasLocation" x="4576.8000000000002" y="42.728635682158924"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="gd5-51-sB5">
             <objects>
-                <viewController id="KHL-Ee-sm6" sceneMemberID="viewController">
+                <viewController id="KHL-Ee-sm6" customClass="AboutViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zcN-kT-lUy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обо мне" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZh-Xc-pUP">
-                                <rect key="frame" x="127.5" y="69" width="120.5" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZh-Xc-pUP">
+                                <rect key="frame" x="147" y="69" width="81" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -258,23 +274,34 @@
                                     <constraint firstAttribute="height" constant="203" id="cyE-5V-BOC"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNK-tJ-9MJ">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="3Zb-YG-dlT"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="cRa-r0-yYk"/>
-                            </scrollView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="svg-NG-rOU">
+                                <rect key="frame" x="25" y="369" width="325" height="224"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="djh-MG-uzN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="djh-MG-uzN" firstAttribute="trailing" secondItem="svg-NG-rOU" secondAttribute="trailing" constant="25" id="6CP-Qf-QRC"/>
+                            <constraint firstItem="svg-NG-rOU" firstAttribute="leading" secondItem="djh-MG-uzN" secondAttribute="leading" constant="25" id="Co0-Re-Bcd"/>
+                            <constraint firstItem="svg-NG-rOU" firstAttribute="centerX" secondItem="zcN-kT-lUy" secondAttribute="centerX" id="Jhg-7q-4hj"/>
+                            <constraint firstItem="svg-NG-rOU" firstAttribute="top" secondItem="fl5-5H-C7p" secondAttribute="bottom" constant="35" id="LXx-9V-VuK"/>
                             <constraint firstItem="aZh-Xc-pUP" firstAttribute="centerX" secondItem="zcN-kT-lUy" secondAttribute="centerX" id="VDl-rL-VzF"/>
+                            <constraint firstItem="djh-MG-uzN" firstAttribute="bottom" secondItem="svg-NG-rOU" secondAttribute="bottom" constant="25" id="cCy-T2-uC6"/>
                             <constraint firstItem="fl5-5H-C7p" firstAttribute="centerX" secondItem="zcN-kT-lUy" secondAttribute="centerX" id="tNj-RF-Cgc"/>
                             <constraint firstItem="fl5-5H-C7p" firstAttribute="top" secondItem="aZh-Xc-pUP" secondAttribute="bottom" constant="25" id="vLT-ho-ZEj"/>
                             <constraint firstItem="aZh-Xc-pUP" firstAttribute="top" secondItem="djh-MG-uzN" secondAttribute="top" constant="25" id="wOY-ty-kFe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="y9N-7d-IDP"/>
+                    <connections>
+                        <outlet property="textAbout" destination="svg-NG-rOU" id="fas-oI-cGJ"/>
+                        <outlet property="titleAbout" destination="aZh-Xc-pUP" id="4BB-Pg-wRe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ApG-ga-5aC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -379,6 +406,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -24,7 +24,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    
 
     override func viewDidLoad() {
         
