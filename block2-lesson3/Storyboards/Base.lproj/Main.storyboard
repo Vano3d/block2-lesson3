@@ -214,16 +214,16 @@
             </objects>
             <point key="canvasLocation" x="3900.0000000000005" y="425.22321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--My Life View Controller-->
         <scene sceneID="jak-W1-zNn">
             <objects>
-                <viewController id="SCd-zb-NgW" sceneMemberID="viewController">
+                <viewController id="SCd-zb-NgW" customClass="MyLifeViewController" customModule="block2_lesson3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IXQ-rP-KGR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Моя жизнь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z10-ag-KRM">
-                                <rect key="frame" x="111" y="69" width="153.5" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z10-ag-KRM">
+                                <rect key="frame" x="163.5" y="69" width="48" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -236,17 +236,33 @@
                                     <constraint firstAttribute="width" secondItem="mdZ-Qq-ZWd" secondAttribute="height" multiplier="205:179" id="fox-6V-n9X"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="daz-bI-une">
+                                <rect key="frame" x="25" y="335" width="325" height="258"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hYv-dL-Exe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hYv-dL-Exe" firstAttribute="trailing" secondItem="daz-bI-une" secondAttribute="trailing" constant="25" id="9aW-Xv-w4p"/>
+                            <constraint firstItem="hYv-dL-Exe" firstAttribute="bottom" secondItem="daz-bI-une" secondAttribute="bottom" constant="25" id="B66-GP-LDo"/>
                             <constraint firstItem="z10-ag-KRM" firstAttribute="centerX" secondItem="IXQ-rP-KGR" secondAttribute="centerX" id="Bbv-p2-4I1"/>
                             <constraint firstItem="z10-ag-KRM" firstAttribute="top" secondItem="hYv-dL-Exe" secondAttribute="top" constant="25" id="CeL-P3-IEb"/>
+                            <constraint firstItem="daz-bI-une" firstAttribute="leading" secondItem="hYv-dL-Exe" secondAttribute="leading" constant="25" id="ngx-e5-h9s"/>
                             <constraint firstItem="mdZ-Qq-ZWd" firstAttribute="centerX" secondItem="IXQ-rP-KGR" secondAttribute="centerX" id="wEo-EM-GmM"/>
                             <constraint firstItem="mdZ-Qq-ZWd" firstAttribute="top" secondItem="z10-ag-KRM" secondAttribute="bottom" constant="25" id="wq8-4t-1Eh"/>
+                            <constraint firstItem="daz-bI-une" firstAttribute="top" secondItem="mdZ-Qq-ZWd" secondAttribute="bottom" constant="25" id="xHA-mv-AnE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F0K-Fd-pPn"/>
+                    <connections>
+                        <outlet property="textLife" destination="daz-bI-une" id="cwp-Px-wIj"/>
+                        <outlet property="titleLife" destination="z10-ag-KRM" id="zbK-mW-W5l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hj5-j3-4MY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

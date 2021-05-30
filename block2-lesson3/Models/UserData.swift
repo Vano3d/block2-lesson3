@@ -22,7 +22,7 @@ struct InfoDescription {
             
             InfoDescription(title: "Моя жизнь", description: "Просто рад жить на этой прекрасной планете."),
             
-            InfoDescription(title: "Моя работаю", description: "18 лет разностороннего опыта в IT. Дальше будет интереснее!")
+            InfoDescription(title: "Моя работа", description: "18 лет разностороннего опыта в IT. Дальше будет интереснее!")
         ]
     }
     

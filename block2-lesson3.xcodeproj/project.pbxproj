@@ -19,6 +19,7 @@
 		E604BAC82663D26600AED1C9 /* GradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604BAC72663D26600AED1C9 /* GradientColor.swift */; };
 		E604BACA2664256C00AED1C9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604BAC92664256C00AED1C9 /* AboutViewController.swift */; };
 		E604BACC2664354F00AED1C9 /* MyJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604BACB2664354F00AED1C9 /* MyJobViewController.swift */; };
+		E604BACE266437C100AED1C9 /* MyLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E604BACD266437C100AED1C9 /* MyLifeViewController.swift */; };
 		E6B79E60265F1AB3003AF507 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B79E5F265F1AB3003AF507 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		E604BAC72663D26600AED1C9 /* GradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColor.swift; sourceTree = "<group>"; };
 		E604BAC92664256C00AED1C9 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		E604BACB2664354F00AED1C9 /* MyJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJobViewController.swift; sourceTree = "<group>"; };
+		E604BACD266437C100AED1C9 /* MyLifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLifeViewController.swift; sourceTree = "<group>"; };
 		E6B79E5F265F1AB3003AF507 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				E604BAC526630B9300AED1C9 /* MoreViewController.swift */,
 				E604BAC92664256C00AED1C9 /* AboutViewController.swift */,
 				E604BACB2664354F00AED1C9 /* MyJobViewController.swift */,
+				E604BACD266437C100AED1C9 /* MyLifeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				E604BAC626630B9300AED1C9 /* MoreViewController.swift in Sources */,
 				E604BAC42662F4D600AED1C9 /* UserData.swift in Sources */,
 				E6036CD9265D6E7900B85492 /* ViewController.swift in Sources */,
+				E604BACE266437C100AED1C9 /* MyLifeViewController.swift in Sources */,
 				E604BACA2664256C00AED1C9 /* AboutViewController.swift in Sources */,
 				E604BAC82663D26600AED1C9 /* GradientColor.swift in Sources */,
 				E6036CD5265D6E7900B85492 /* AppDelegate.swift in Sources */,

@@ -5,7 +5,6 @@
 //  Created by Chupinsky Ivan on 30.05.2021.
 //
 
-
 import UIKit
 
 class AboutViewController: UIViewController {
