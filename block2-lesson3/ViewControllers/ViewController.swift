@@ -24,10 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var forgotUserNameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
-    
-//    private let userConst = "Ivan"
-//    private let passConst = "Password"
-    
+
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -54,7 +51,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func loginChecked() -> Bool {
-        userNameField.text == userConst && passwordField.text == passConst
+        userNameField.text == UserData().userConst && passwordField.text == UserData().passConst
     }
     
     func showSecondScreen() {
@@ -71,18 +68,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func tappedForgotUserNameButton(_ sender: Any) {
-        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your User name is \(userConst)")
+        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your User name is \(UserData().userConst)")
 
     }
     
     @IBAction func tappedForgotPasswordButton(_ sender: Any) {
-        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your Password is.. \(passConst)")
+        Alert.showBasicAlert(on: self, with: "Oops!", message: "Your Password is.. \(UserData().passConst)")
     }
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+            let tabBarController = segue.destination as! UITabBarController
+        
             guard let secondVC = segue.destination as? LogoutViewController else { return }
         secondVC.helloText = userNameField.text
+        
         }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

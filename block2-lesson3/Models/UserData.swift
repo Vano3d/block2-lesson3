@@ -7,5 +7,10 @@
 
 import Foundation
 
-private let userConst = "Ivan"
-private let passConst = "Password"
+class UserData {
+    let userConst = "Ivan"
+    let passConst = "Password"
+}
+
+
+
