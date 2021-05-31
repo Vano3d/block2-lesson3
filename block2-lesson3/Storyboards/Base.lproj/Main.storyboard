@@ -175,7 +175,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="harold" translatesAutoresizingMaskIntoConstraints="NO" id="vB5-Y4-Rdl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vB5-Y4-Rdl">
                                 <rect key="frame" x="25" y="131" width="325" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="190" id="23V-9B-4C9"/>
@@ -184,7 +184,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ye8-pX-PHr">
                                 <rect key="frame" x="25" y="346" width="325" height="247"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -206,6 +206,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="l0i-aM-h4E"/>
                     <connections>
+                        <outlet property="imageJob" destination="vB5-Y4-Rdl" id="qjC-ZS-3o3"/>
                         <outlet property="textJob" destination="Ye8-pX-PHr" id="pHy-se-ZxE"/>
                         <outlet property="titleJob" destination="dMq-w6-Ph1" id="6BS-Kq-inS"/>
                     </connections>
@@ -228,7 +229,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="mdZ-Qq-ZWd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mdZ-Qq-ZWd">
                                 <rect key="frame" x="85" y="131" width="205" height="179"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="ECE-6f-YnA"/>
@@ -239,7 +240,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="daz-bI-une">
                                 <rect key="frame" x="25" y="335" width="325" height="258"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -260,6 +261,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="F0K-Fd-pPn"/>
                     <connections>
+                        <outlet property="imageLife" destination="mdZ-Qq-ZWd" id="3xz-kN-5oU"/>
                         <outlet property="textLife" destination="daz-bI-une" id="cwp-Px-wIj"/>
                         <outlet property="titleLife" destination="z10-ag-KRM" id="zbK-mW-W5l"/>
                     </connections>
@@ -282,7 +284,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portret" translatesAutoresizingMaskIntoConstraints="NO" id="fl5-5H-C7p">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fl5-5H-C7p">
                                 <rect key="frame" x="85" y="131" width="205" height="203"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="3Im-lg-E3Q"/>
@@ -293,7 +295,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="svg-NG-rOU">
                                 <rect key="frame" x="25" y="369" width="325" height="224"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -315,6 +317,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="y9N-7d-IDP"/>
                     <connections>
+                        <outlet property="imageAbout" destination="fl5-5H-C7p" id="wL1-mA-f7T"/>
                         <outlet property="textAbout" destination="svg-NG-rOU" id="fas-oI-cGJ"/>
                         <outlet property="titleAbout" destination="aZh-Xc-pUP" id="4BB-Pg-wRe"/>
                     </connections>
@@ -415,10 +418,7 @@
     </scenes>
     <resources>
         <image name="applelogo" catalog="system" width="103" height="128"/>
-        <image name="cat" width="1144" height="1016"/>
-        <image name="harold" width="1776" height="1014"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="portret" width="1188" height="1196"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

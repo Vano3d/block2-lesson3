@@ -53,11 +53,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
-    func loginChecked() -> Bool {
+    private func loginChecked() -> Bool {
         userNameField.text == UserData().userConst && passwordField.text == UserData().passConst
     }
     
-    func showSecondScreen() {
+    private func showSecondScreen() {
         performSegue(withIdentifier: "tabBarVC", sender: nil)
     }
     

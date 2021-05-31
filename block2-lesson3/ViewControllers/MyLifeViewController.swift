@@ -9,12 +9,16 @@ import UIKit
 
 class MyLifeViewController: UIViewController {
     
+    @IBOutlet weak var imageLife: UIImageView!
     @IBOutlet weak var titleLife: UILabel!
     @IBOutlet weak var textLife: UITextView!
     
+    var user = InfoDescription.getDescription()
+    
     override func viewDidLoad() {
-        
-        titleLife.text = descriptionArray[1].title
-        textLife.text = descriptionArray[1].description
+        imageLife.image = UIImage(named: user[1].image)
+        titleLife.text = user[1].title
+        textLife.text = user[1].description
     }
+
 }

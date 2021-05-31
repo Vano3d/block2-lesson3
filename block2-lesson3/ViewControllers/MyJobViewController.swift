@@ -9,12 +9,16 @@ import UIKit
 
 class MyJobViewController: UIViewController {
     
+    @IBOutlet weak var imageJob: UIImageView!
     @IBOutlet weak var titleJob: UILabel!
     @IBOutlet weak var textJob: UITextView!
     
+    var user = InfoDescription.getDescription()
+    
     override func viewDidLoad() {
-        
-        titleJob.text = descriptionArray[2].title
-        textJob.text = descriptionArray[2].description
+        imageJob.image = UIImage(named: user[2].image)
+        titleJob.text = user[2].title
+        textJob.text = user[2].description
     }
+
 }

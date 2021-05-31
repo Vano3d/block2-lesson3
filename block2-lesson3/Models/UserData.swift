@@ -15,19 +15,20 @@ class UserData {
 struct InfoDescription {
     var title: String = ""
     var description: String = ""
+    var image: String = ""
     
     static func getDescription() -> [InfoDescription] {
         [
-            InfoDescription(title: "Обо мне", description: "Родился, крестился, женился.."),
+            InfoDescription(title: "Обо мне", description: "Родился, крестился, женился..", image: "portret"),
+             
+            InfoDescription(title: "Моя жизнь", description: "Просто рад жить на этой прекрасной планете.", image: "cat"),
             
-            InfoDescription(title: "Моя жизнь", description: "Просто рад жить на этой прекрасной планете."),
-            
-            InfoDescription(title: "Моя работа", description: "18 лет разностороннего опыта в IT. Дальше будет интереснее!")
+            InfoDescription(title: "Моя работа", description: "18 лет разностороннего опыта в IT. Дальше будет интереснее!", image: "cat")
         ]
     }
     
 }
-var descriptionArray = InfoDescription.getDescription()
+
 
 
 
