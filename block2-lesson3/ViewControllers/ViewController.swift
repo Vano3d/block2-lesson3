@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         userNameField.delegate = self
         passwordField.delegate = self
         
-        loginButton.layer.cornerRadius = 15
+        loginButton.layer.cornerRadius = loginButton.frame.height / 2
         
     }
     
